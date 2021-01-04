@@ -141,6 +141,19 @@
             }
           }
         },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "AngularUniversalHerokuTest:build",
+            "serverTarget": "AngularUniversalHerokuTest:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "AngularUniversalHerokuTest:build:production",
+              "serverTarget": "AngularUniversalHerokuTest:server:production"
+            }
+          }
+        },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
